@@ -2,8 +2,6 @@ import './App.css';
 import Sidebar from './components/Sidebar'
 import styled from 'styled-components'
 
-
-
 function App() {
   return (
     <main className="App">
