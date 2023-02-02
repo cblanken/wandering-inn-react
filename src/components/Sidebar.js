@@ -15,11 +15,9 @@ const Section = styled.div`
   align-items: flex-start;
   gap: 1rem;
   background: #282c34;
-  width: 10%;
-  min-width: fit-content;
-  max-width: 200px;
+  width: fit-content;
   height: calc(100% - 3.75rem);
-  padding: 1rem 0;
+  padding: 1rem;
 `
 
 function Sidebar() {

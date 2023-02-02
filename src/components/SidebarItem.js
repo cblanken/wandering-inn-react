@@ -7,14 +7,14 @@ function SidebarItem({ text, icon, selected }) {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border: none;
     border-radius: 0.5rem;
     color: rgb(150,160,160);
     background: rgba(0,0,0,0);
+    width: 100%;
     padding: 0.5rem 1.5rem;
-    margin: 0 0.75rem;
     font: bold 1rem 'Hack', Helvetica, monospace;
 
     &:hover {
