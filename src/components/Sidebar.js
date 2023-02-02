@@ -8,7 +8,6 @@ import { FiSearch } from 'react-icons/fi'
 import { FiInfo } from 'react-icons/fi'
 import { FiSettings } from 'react-icons/fi'
 
-
 const Section = styled.div`
   display: flex;
   flex-direction: column;
@@ -19,7 +18,7 @@ const Section = styled.div`
   width: 10%;
   min-width: fit-content;
   max-width: 200px;
-  height: 100%;
+  height: calc(100% - 3.75rem);
   padding: 1rem 0;
 `
 
