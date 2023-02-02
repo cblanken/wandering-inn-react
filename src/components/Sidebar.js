@@ -1,12 +1,19 @@
 import React from 'react'
-import SidebarItem from './SidebarItem'
 import styled from 'styled-components'
 
-const Div = styled.div`
+import SidebarItem from './SidebarItem'
+import { FiActivity } from 'react-icons/fi'
+import { FiUsers } from 'react-icons/fi'
+import { FiSearch } from 'react-icons/fi'
+import { FiInfo } from 'react-icons/fi'
+import { FiSettings } from 'react-icons/fi'
+
+
+const Section = styled.div`
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   justify-content: flex-start;
+  align-items: flex-start;
   gap: 1rem;
   background: #282c34;
   width: 10%;
@@ -18,11 +25,15 @@ const Div = styled.div`
 
 function Sidebar() {
   return (
-    <Div>
-      <SidebarItem text="One" />
-      <SidebarItem text="Two" />
-      <SidebarItem text="Three" />
-    </Div>
+    <>
+      <Section>
+        <SidebarItem text="Overview" icon=<FiActivity/> />
+        <SidebarItem text="Characters" icon=<FiUsers/> />
+        <SidebarItem text="Search" icon=<FiSearch/> />
+        <SidebarItem text="About" icon=<FiInfo/> />
+        <SidebarItem text="Settings" icon=<FiSettings/> />
+      </Section>
+    </>
   )
 }
 
