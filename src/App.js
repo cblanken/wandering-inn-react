@@ -6,12 +6,12 @@ import styled from 'styled-components'
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <header className="App-header">
         Innverse Stats
       </header>
       <Sidebar />
-    </div>
+    </main>
   );
 }
 
