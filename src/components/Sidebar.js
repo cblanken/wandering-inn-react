@@ -5,12 +5,14 @@ import styled from 'styled-components'
 const Div = styled.div`
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   justify-content: flex-start;
   gap: 1rem;
   background: #282c34;
   width: 10%;
   min-width: fit-content;
   max-width: 200px;
+  height: 100%;
   padding: 1rem 0;
 `
 
