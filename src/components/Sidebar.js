@@ -2,24 +2,23 @@ import React from 'react'
 import styled from 'styled-components'
 
 import SidebarItem from './SidebarItem'
-import { FiActivity } from 'react-icons/fi'
-import { FiUsers } from 'react-icons/fi'
-import { FiSearch } from 'react-icons/fi'
-import { FiInfo } from 'react-icons/fi'
-import { FiSettings } from 'react-icons/fi'
-import { FiGithub } from 'react-icons/fi'
+import { FiActivity, FiExternalLink } from 'react-icons/fi'
+import { FiUsers, FiSearch, FiInfo, FiSettings, FiGithub } from 'react-icons/fi'
 
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import Home from '../pages/Home'
 import Overview from '../pages/Overview'
 import Characters from '../pages/Characters'
+import Search from '../pages/Search'
+import About from '../pages/About'
+import Settings from '../pages/Settings'
 
 const Main = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: calc(100% - 3.75rem);
-  background: #282c34;
+  background: #13162A;
   width: fit-content;
   padding: 1rem;
 `
@@ -50,17 +49,20 @@ function Sidebar() {
       <Main>
         <div>
           <Section>
-            <SidebarItem text="Overview" link="/" icon=<FiActivity/> />
-            <SidebarItem text="Characters" link="characters" icon=<FiUsers/> />
-            <SidebarItem text="Search" link="search" icon=<FiSearch/> />
-          </Section>
-          <Section>
-            <SidebarItem text="Source" link="https://github.com/cblanken/wandering-inn-react" icon=<FiGithub/> />
+            <SidebarItem text="Overview" link="/" left_icon=<FiActivity/> />
+            <SidebarItem text="Characters" link="/characters" left_icon=<FiUsers/> />
+            <SidebarItem text="Search" link="/search" left_icon=<FiSearch/> />
           </Section>
         </div>
         <Footer>
-          <SidebarItem text="About" icon=<FiInfo/> />
-          <SidebarItem text="Settings" icon=<FiSettings/> />
+          <SidebarItem
+            text="Code"
+            link="https://github.com/cblanken/wandering-inn-react"
+            left_icon=<FiGithub/>
+            right_icon=<FiExternalLink/>
+          />
+          <SidebarItem text="About" link="/about" left_icon=<FiInfo/> />
+          <SidebarItem text="Settings" link="/settings" left_icon=<FiSettings/> />
         </Footer>
       </Main>
 
@@ -68,7 +70,9 @@ function Sidebar() {
         <Route path="/" element={<Home />} />
         <Route path="/overview" element={<Overview />} />
         <Route path="/characters" element={<Characters />} />
-        <Route path="/search" element={<Characters />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </Router>
   )

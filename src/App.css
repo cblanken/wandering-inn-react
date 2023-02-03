@@ -11,7 +11,7 @@ main {
 
 .App {
   text-align: center;
-  background: rgb(66, 65, 71);
+  background: #232849;
 }
 
 .App-logo {
@@ -28,7 +28,7 @@ main {
 .App-header {
   position: sticky;
   top: 0;
-  background-color: #282c34;
+  background-color: #13162A;
   height: 3.75rem;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ main {
   justify-content: center;
   font: 2rem 'Hack', monospace;
   color: white;
-  border-bottom: 3px solid rgb(0, 217, 255);
+  border-bottom: 3px solid #4F5DA7;
   min-width: max-content;
 }
 

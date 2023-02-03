@@ -11,7 +11,9 @@ const ItemWrapper = styled.div`
   }
 
   &:hover {
-    color: rgb(210,220,220);
+    & * {
+      color: white;
+    }
     background: rgba(0,0,0,30%);
     border-radius: 0.5rem;
   }
@@ -34,17 +36,17 @@ const activeNavLink = {
   background: "red",
 }
 
-function SidebarItem({ text, icon, link }) {
+function SidebarItem({ text, left_icon, right_icon, link }) {
   return (
     <ItemWrapper>
       {
         link
         ? <NavLink 
             to={link}
-            children=<Item>{icon}{text}</Item>
+            children=<Item>{left_icon}{text}{right_icon}</Item>
             style={({ isActive }) => isActive ? activeNavLink : undefined }
           />
-        : <Item>{icon}{text}</Item>
+        : <Item>{left_icon}{text}{right_icon}</Item>
       }
     </ItemWrapper>
   )
