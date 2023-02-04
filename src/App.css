@@ -5,13 +5,18 @@
 html,
 body,
 #root,
-main {
+.App {
   height: 100%;
 }
 
 .App {
   text-align: center;
   background: #232849;
+}
+
+.App .router {
+  display: flex;
+  flex-direction: row;
 }
 
 .App-logo {
@@ -51,4 +56,10 @@ main {
   to {
     transform: rotate(360deg);
   }
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  height: calc(100% - 3.75rem);
 }

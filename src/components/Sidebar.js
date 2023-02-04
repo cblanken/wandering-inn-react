@@ -5,22 +5,11 @@ import SidebarItem from './SidebarItem'
 import { FiActivity, FiExternalLink } from 'react-icons/fi'
 import { FiUsers, FiSearch, FiInfo, FiSettings, FiGithub, FiStar, FiAward, FiFeather } from 'react-icons/fi'
 
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
-import Home from '../pages/Home'
-import Overview from '../pages/Overview'
-import Characters from '../pages/Characters'
-import Classes from '../pages/Classes'
-import Skills from '../pages/Skills'
-import Magic from '../pages/Magic'
-import Search from '../pages/Search'
-import About from '../pages/About'
-import Settings from '../pages/Settings'
-
-const Main = styled.div`
+const Nav = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100% - 3.75rem);
+  height: 100%;
   background: #13162A;
   width: fit-content;
   padding: 1rem;
@@ -48,44 +37,30 @@ const Footer = styled.footer`
 
 function Sidebar() {
   return (
-    <Router>
-      <Main>
-        <div>
-          <Section>
-            <SidebarItem text="Overview" link="/" left_icon=<FiActivity/> />
-            <SidebarItem text="Characters" link="/characters" left_icon=<FiUsers/> />
-            <SidebarItem text="Classes" link="/classes" left_icon=<FiStar/> />
-            <SidebarItem text="Skills" link="/skills" left_icon=<FiAward/> />
-            <SidebarItem text="Magic" link="/magic" left_icon=<FiFeather/> />
-          </Section>
-          <Section>
-            <SidebarItem text="Search" link="/search" left_icon=<FiSearch/> />
-          </Section>
-        </div>
-        <Footer>
-          <SidebarItem
-            text="Code"
-            link="https://github.com/cblanken/wandering-inn-react"
-            left_icon=<FiGithub/>
-            right_icon=<FiExternalLink/>
-          />
-          <SidebarItem text="About" link="/about" left_icon=<FiInfo/> />
-          <SidebarItem text="Settings" link="/settings" left_icon=<FiSettings/> />
-        </Footer>
-      </Main>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/overview" element={<Overview />} />
-        <Route path="/characters" element={<Characters />} />
-        <Route path="/classes" element={<Classes />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/magic" element={<Magic />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/settings" element={<Settings />} />
-      </Routes>
-    </Router>
+    <Nav>
+      <div>
+        <Section>
+          <SidebarItem text="Overview" link="/" left_icon=<FiActivity/> />
+          <SidebarItem text="Characters" link="/characters" left_icon=<FiUsers/> />
+          <SidebarItem text="Classes" link="/classes" left_icon=<FiStar/> />
+          <SidebarItem text="Skills" link="/skills" left_icon=<FiAward/> />
+          <SidebarItem text="Magic" link="/magic" left_icon=<FiFeather/> />
+        </Section>
+        <Section>
+          <SidebarItem text="Search" link="/search" left_icon=<FiSearch/> />
+        </Section>
+      </div>
+      <Footer>
+        <SidebarItem
+          text="Code"
+          link="https://github.com/cblanken/wandering-inn-react"
+          left_icon=<FiGithub/>
+          right_icon=<FiExternalLink/>
+        />
+        <SidebarItem text="About" link="/about" left_icon=<FiInfo/> />
+        <SidebarItem text="Settings" link="/settings" left_icon=<FiSettings/> />
+      </Footer>
+    </Nav>
   )
 }
 
