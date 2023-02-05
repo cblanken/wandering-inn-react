@@ -1,3 +1,6 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:wght@500;600;700;800&family=Sanchez:ital@0;1&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -34,15 +37,16 @@ body,
   position: sticky;
   top: 0;
   background-color: #13162A;
-  height: 3.75rem;
+  height: 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   font: 2rem 'Hack', monospace;
   color: white;
   border-bottom: 3px solid #4F5DA7;
   min-width: max-content;
+  text-align: left;
+  padding-left: 1rem;
 }
 
 .App-link {
@@ -58,8 +62,45 @@ body,
   }
 }
 
+/* Custom styles */
+main {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'Sanchez', serif;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+a {
+  color: red;
+}
+
 .body {
   display: flex;
   flex-direction: row;
-  height: calc(100% - 3.75rem);
+  height: calc(100% - 4rem);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  text-align: left;
+  margin: 4rem 0;
+  color: rgb(190, 200, 200);
+}
+
+.container > * {
+  width: 80%;
+  margin: 0;
+}
+
+.container > p {
+  font: 1.5rem 'Sanchez', serif;
 }

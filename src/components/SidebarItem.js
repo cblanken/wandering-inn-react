@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom'
 
 const ItemWrapper = styled.div`
   width: 100%;
-
   & > a {
     width: 100%;
     text-decoration: none;
@@ -26,10 +25,10 @@ const Item = styled.button`
   justify-content: flex-start;
   align-items: center;
   border: none;
-  color: rgb(150,160,160);
+  color: rgb(190, 200, 200);
   background: rgba(0,0,0,0);
   padding: 0.75rem 1.5rem;
-  font: bold 1rem 'Hack', Helvetica, monospace;
+  font: bold 1.25rem 'Hack', Helvetica, monospace;
 `;
 
 const activeNavLink = {

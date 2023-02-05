@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Innverse Stats
+        <h1>Innverse Stats</h1>
       </header>
       <div className="body">
         <Router>
