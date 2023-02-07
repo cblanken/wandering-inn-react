@@ -9,9 +9,7 @@ const Nav = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
   background: #13162A;
-  width: fit-content;
   padding: 1rem;
 `
 

@@ -13,13 +13,12 @@ body,
 }
 
 .App {
-  text-align: center;
-  background: #232849;
+  display: flex;
+  flex-direction: column;
 }
 
 .App .router {
   display: flex;
-  flex-direction: row;
 }
 
 .App-logo {
@@ -34,19 +33,16 @@ body,
 }
 
 .App-header {
-  position: sticky;
-  top: 0;
   background-color: #13162A;
-  height: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   font: 2rem 'Hack', monospace;
   color: white;
   border-bottom: 3px solid #4F5DA7;
-  min-width: max-content;
   text-align: left;
   padding-left: 1rem;
+}
+
+.App-header * {
+  margin: 0;
 }
 
 .App-link {
@@ -79,10 +75,10 @@ a {
   color: red;
 }
 
-.body {
+.App-body {
   display: flex;
-  flex-direction: row;
-  height: calc(100% - 4rem);
+  flex-grow: 1;
+  background: #232849;
 }
 
 .container {
@@ -98,6 +94,7 @@ a {
 
 .container > * {
   width: 80%;
+  max-width: 1800px;
   margin: 0;
 }
 
