@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Wandering Inn Stats
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+This is the frontend for a web application that displays some interesting statistics about [The Wandering Inn](https://wanderinginn.com/) web serial and indexes some important details of the story to be easily searchable. The story itself is over 10,000,000 words at the time of this writing, and there are dozens of important and recurring characters, locations, and other interesting aspects such as _[Spells]_, _[Skills]_, and _[Levels]_. 
 
-## Available Scripts
+Unfortunately after over 6 years of consistent publishing by the [author](https://www.patreon.com/pirateaba/about), it can be difficult to recall all the important details. As a reader myself who eventually caught up to the current releases after over a year of consistent reading, I thought having a tool to locate where in the text particular characters were introduced, when specific events occurred, and what elements of the _[Leveling]_ system I might have forgotten about.
 
-In the project directory, you can run:
+At the start, this project only consisted of a few scripts that allowed me to lookup particular characters, _[Spells]_, _[Skills]_, _[Levels]_ and so on. But after some consideration it seemed like the perfect opportunity to build a database and learn more about React and play around with some data visuallization, so here we are.
 
-### `npm start`
+## Installation
+...
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
+...
+TODO: link to live demo
+...
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Contribute
+...
+TODO: environment setup instructions
+TODO: contributing guidelines doc
+...
 
-### `npm test`
+## Tests
+...
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
+- Copyright of The Wandering Inn and original text belongs to __The Wandering Inn__ by __pirateba__
+- All other code falls under the MIT [LICENSE](./LICENSE)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Credits
+- See [The Wandering Inn offical website](https://wanderinginn.com/) to check out the web serial which inspired this project. Please check out the author's [Patreon](https://www.patreon.com/pirateaba/about) if you've enjoyed the web serial and would like to support them.
+- I hadn't realized other members of the community had made some other interesting applications analyzing The Wandering Inn until after I began working on my own project but please check them out, they're very cool as well.
+    - [Wandering Inn Statistics](https://wandering-inn-statistics.aris.moe/)
+    - [Wandering Inn Retcons](https://wanderinginn.neocities.org/)
