@@ -3,7 +3,7 @@
 ## Description
 This is the frontend for a web application that displays some interesting statistics about [The Wandering Inn](https://wanderinginn.com/) web serial and indexes some important details of the story to be easily searchable. The story itself is over 10,000,000 words at the time of this writing, and there are dozens of important and recurring characters, locations, and other interesting aspects such as _[Spells]_, _[Skills]_, and _[Levels]_. 
 
-Unfortunately after over 6 years of consistent publishing by the [author](https://www.patreon.com/pirateaba/about), it can be difficult to recall all the important details. As a reader myself who eventually caught up to the current releases after over a year of consistent reading, I thought having a tool to locate where in the text particular characters were introduced, when specific events occurred, and what elements of the _[Leveling]_ system I might have forgotten about.
+Unfortunately after over 6 years of consistent publishing by the [author](https://www.patreon.com/pirateaba/about), it can be difficult to recall all the important details. As a reader myself who eventually caught up to the current releases after over a year of consistent reading, I thought having a tool to locate where in the text particular characters were introduced, when specific events occurred, and what elements of the _[Leveling]_ system were mentioned that I might have forgotten.
 
 At the start, this project only consisted of a few scripts that allowed me to lookup particular characters, _[Spells]_, _[Skills]_, _[Levels]_ and so on. But after some consideration it seemed like the perfect opportunity to build a database and learn more about React and play around with some data visuallization, so here we are.
 
